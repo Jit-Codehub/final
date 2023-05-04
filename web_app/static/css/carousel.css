@@ -55,8 +55,8 @@
 }
 
 .testimonial-carousel .owl-dot.active {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   background: var(--primary-bg);
 }
 

@@ -74,7 +74,7 @@
         <div class="col-lg-4 order-lg-1 order-2 mt-lg-0 mt-5">
             <ul id="all-services">
                 {% for service in all_services %}
-                    <a href="{% url 'web_app:services' service.slug %}">
+                    <a href="{% url 'web_app:services' service.slug %}" style="text-decoration: none;">
                     {% if service.slug == service_name %}
                         <li class="primary-theme card-effect">
                             {{service.name}}
