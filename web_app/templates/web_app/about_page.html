@@ -13,9 +13,20 @@
 
 
 {% block body %}
-<div class="d-flex flex-wrap">
-    <div class="w-50 mobiscreenview"><img src="{{customdata.displayimage.url}}"width="100%" class="mobiscreenview" alt=""></div>
-    <div class="w-30 mobiscreenview py-5 px-3">{{customdata.aboutDescript|safe}}</div>
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-5 mb-5 mb-lg-0 display-none" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded" src="{{customdata.displayimage.url}}"
+                        style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <p>{{customdata.aboutDescript|safe}} </p>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="mx-auto py-4 text-center">
     {{customdata.meetteam|safe}}

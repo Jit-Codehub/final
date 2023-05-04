@@ -13,7 +13,7 @@ def global_context(request):
     add = business.adress_set.all()
     ct = business.contactpoint_set.all()
     services = Service.objects.filter(status="published")[:settings.SERVICES_IN_FOOTER_LIMIT]
-    context = {"oh": oh, "add": add, "ct": ct, "map_id":business.map_id,"six_services_obj":services}
+    context = {"oh": oh, "add": add, "ct": ct, "map_id":business.hasMap,"six_services_obj":services}
     global_context.update(context)
 
     custom_site_content_obj = CustomSiteContent.objects.filter(status="published")

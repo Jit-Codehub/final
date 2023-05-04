@@ -58,3 +58,9 @@
 .round5{
     border-radius: 5px;
 }
+
+@media only screen and (max-width: 1000px) {
+    .display-none {
+      display: none;
+    }
+  }
